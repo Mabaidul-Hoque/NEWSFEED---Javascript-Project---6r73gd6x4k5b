@@ -1,0 +1,88 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar{
+    background-color: black;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+.nav-header{
+    display: flex;
+    justify-content: center;
+}
+.nav-header>h1{
+    background-color: white;
+    width: 35rem;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+.load-btn{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+}
+.load-btn>button{
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #ffde59;
+    text-transform: uppercase;
+}
+.main-container>h2,
+.main-container>h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.main-container>h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+.main-container>h1{
+    font-size: 60px;
+}
+@supports (-webkit-text-stroke: 2px black) {
+    .main-container>h1 {
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke: 2px black;
+    }
+}
+
+/* saved news page */
+.saved-news-navbar{
+    background-color: black;
+    height: 15vh;
+    padding: 2rem 8rem;
+    margin-bottom: 2rem;
+}
+.my-newsfeed-btn,.saved-news-btn{
+    width: 20rem;
+    height: 8vh;
+    text-transform: uppercase;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.my-newsfeed-btn{
+    background-color: white;
+    margin-right: 10px;
+}
+.saved-news-btn{
+    color: inherit;
+    background-color: #ffde59;
+}
