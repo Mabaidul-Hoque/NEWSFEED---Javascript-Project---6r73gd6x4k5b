@@ -71,10 +71,11 @@ body{
 .new-news-navbar{
     display: flex;
 }
-.new-news-navbar  img{
+.new-news-logo{
     width: 100px;
     height: 50px;
     background: transparent;
+    border-radius: 10px;
 }
 
 .my-newsfeed-btn,.saved-news-btn,.new-news-btn{
@@ -143,6 +144,35 @@ body{
 .fav-icon{
     display: flex;
     justify-content: flex-end;
+}
+.load-btn-box{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.load-btn-box>button{
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+.load-btn-box>button:hover{
+    scale: 1.05;
+}
+.top-navigator{
+    position: relative;
+}
+.fa-circle-chevron-up{
+    position: fixed;
+    right: 25px;
+    top: 90vh;
+    font-size: 40px;
+    cursor: pointer;
 }
 
 

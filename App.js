@@ -11,9 +11,11 @@ async function fetchNews(limit, page) {
   }
 }
 
+
 let newsArr = [];
 let page = 0;
 const homeLoadBtn = document.getElementById("load-saved-news");
+const loadNewNewsBtn = document.getElementById("load-new-news-btn");
 
 // mew news page
 addEventListener("DOMContentLoaded", async (event) => {
@@ -62,6 +64,12 @@ function renderNews(newsArr) {
       //   }
     }
   });
+}
+
+// load more btn handling
+loadNewNewsBtn.addEventListener("click", handleLoadNewNewsBtn);
+function handleLoadNewNewsBtn() {
+  handleNewNewsBtn();
 }
 
 async function handleNewNewsBtn() {

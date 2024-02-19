@@ -7,19 +7,30 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="new-news-navbar">
+    <!-- NAVABR -->
+    <nav id="navabr" class="new-news-navbar">
       <a href="index.html">
-        <img src="./components/logo/inshort-logo.png" alt="inshort-logo" />
+        <img class="new-news-logo" src="./components/logo/inshort-logo.png" alt="inshort-logo" />
       </a>
       <button class="my-newsfeed-btn new-newsfeed"><h3>My newsfeed</h3></button>
       <button class="new-news-btn"><h3>New news</h3></button>
     </nav>
+    <!-- MAIN SECTION -->
     <main>
       <div id="new-news-container"></div>
+      <div class="load-btn-box">
+        <button id="load-new-news-btn">Load more</button>
+      </div>
+
+      
     </main>
+    <!-- page top navigator -->
+    <a class="top-navigator" href="#navabr">
+      <i class="fa-solid fa-circle-chevron-up"></i>
+    </a>
 
-    <div class="news-card"></div>
 
+    <!-- ALL JS SCRIPTS -->
     <script src="App.js"></script>
     <script
       src="https://kit.fontawesome.com/16cdf41e7f.js"
