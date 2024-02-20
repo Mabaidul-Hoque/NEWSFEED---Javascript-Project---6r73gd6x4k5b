@@ -9,11 +9,25 @@
   <body>
     <!-- NAVABR -->
     <nav id="navabr" class="new-news-navbar">
-      <a href="index.html">
-        <img class="new-news-logo" src="./components/logo/inshort-logo.png" alt="inshort-logo" />
-      </a>
-      <button class="my-newsfeed-btn new-newsfeed"><h3>My newsfeed</h3></button>
-      <button class="new-news-btn"><h3>New news</h3></button>
+      <div class="navbar-up">
+        <a href="index.html">
+          <img class="new-news-logo" src="./components/logo/inshort-logo.png" alt="inshort-logo" />
+        </a>
+        <h3 class="my-newsfeed-btn new-newsfeed">My newsfeed</h3>
+        <h3 class="new-news-btn">New news</h3>
+      </div>
+      <div class="navbar-down">
+        <p>SELECT CATEGORY</p>
+        <ul id="nav-down-list">
+          <li class="list-item active">ALL</li>
+          <li class="list-item">BUSINESS</li>
+          <li class="list-item">SPORTS</li>
+          <li class="list-item">POLITICS</li>
+          <li class="list-item">HATKE</li>
+          <li class="list-item">SCIENCE</li>
+          <li class="list-item">AUTOMOBILE</li>
+        </ul>
+      </div>
     </nav>
     <!-- MAIN SECTION -->
     <main>
@@ -21,12 +35,13 @@
       <div class="load-btn-box">
         <button id="load-new-news-btn">Load more</button>
       </div>
-
-      
     </main>
-    <!-- page top navigator -->
+    <!-- page top and bottom navigator -->
     <a class="top-navigator" href="#navabr">
       <i class="fa-solid fa-circle-chevron-up"></i>
+    </a>
+    <a href="#load-new-news-btn" class="bottom-navigator">
+      <i class="fa-solid fa-circle-chevron-down"></i>
     </a>
 
 
