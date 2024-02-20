@@ -63,6 +63,10 @@ const savedNewsBtn = document.querySelector(".saved-news-btn");
 savedNewsBtn.addEventListener("click", showFavouriteNews);
 function showFavouriteNews() {
   const favoriteNews = getNewsFromLocalStorage();
-  console.log("favoriteNews", favoriteNews);
-  renderFarouritNews(favoriteNews);
+  if(favoriteNews.length !== 0){
+    renderFarouritNews(favoriteNews);
+  }else {
+    alert("There are no favourite news right now!")
+  }
+ 
 }
